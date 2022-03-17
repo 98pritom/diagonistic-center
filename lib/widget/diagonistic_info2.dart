@@ -27,7 +27,8 @@ class _ShowTipsInfo2State extends State<DiagnisticInfo2> {
             // ),
             GestureDetector(
               onTap: () {
-                launch('https://www.google.com/maps/place/Ibn+Sina+Diagnostic+%26+Consultation+Center/@24.8987436,91.8613229,15z/data=!4m5!3m4!1s0x0:0x9586552e413ea939!8m2!3d24.8987436!4d91.8613229');
+                Navigator.of(context).pushNamed('ShowWebIbnSina');
+                // launch('https://www.google.com/maps/place/Ibn+Sina+Diagnostic+%26+Consultation+Center/@24.8987436,91.8613229,15z/data=!4m5!3m4!1s0x0:0x9586552e413ea939!8m2!3d24.8987436!4d91.8613229');
               },
               child: Stack(
                 children: [

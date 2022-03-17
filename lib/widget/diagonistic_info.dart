@@ -29,7 +29,8 @@ class _DiagnosticInfoState extends State<DiagnosticInfo> {
           children: [
             GestureDetector(
               onTap: () {
-                launch('https://www.google.com/maps/place/Popular+Medical+Center+Ltd/@24.8993411,91.8574334,15z/data=!4m2!3m1!1s0x0:0x495d54cee9ae255f?sa=X&ved=2ahUKEwjmqb7I38z2AhWZxTgGHdLPCtAQ_BJ6BAgqEAU');
+                Navigator.of(context).pushNamed('ShowWebPopular');
+                // launch('https://www.google.com/maps/place/Popular+Medical+Center+Ltd/@24.8993411,91.8574334,15z/data=!4m2!3m1!1s0x0:0x495d54cee9ae255f?sa=X&ved=2ahUKEwjmqb7I38z2AhWZxTgGHdLPCtAQ_BJ6BAgqEAU');
               },
               child: Stack(
                 children: [

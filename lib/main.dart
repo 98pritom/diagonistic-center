@@ -1,5 +1,8 @@
 import 'package:diagonistic/diagonistic_screen.dart';
 import 'package:diagonistic/webview.dart';
+import 'package:diagonistic/webview_ibnsina.dart';
+import 'package:diagonistic/webview_labaid.dart';
+import 'package:diagonistic/webview_popular.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -27,6 +30,9 @@ class MyApp extends StatelessWidget {
           'SecondPage': (ctx) => DiagnosticsInfo(),
           'ExtendedPage': (ctx) => ExtendedPage(),
           'ShowWeb': (ctx) => ShowWeb(),
+          'ShowWebPopular': (ctx) => WebViewPopular(),
+          'ShowWebIbnSina': (ctx) => WebViewIbnSina(),
+          'ShowWebLabAid': (ctx) => WebViewLabAid(),
         },
       ),
     );

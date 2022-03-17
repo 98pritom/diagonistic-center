@@ -19,7 +19,7 @@ class _ExtendedPageState extends State<ExtendedPage> {
     String tipsNumber = tipsNumberCollector.toString();
     return Scaffold(
       appBar: AppBar(
-        title: Text('Diagnostic Center $tipsNumber'),
+        title: Text('Diagnostic Center'),
       ),
       body: (tipsNumber == '1')
           ? DiagnosticInfo(info: tipsNumber)
