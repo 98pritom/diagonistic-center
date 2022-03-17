@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-import '../constant/constant.dart';
+import '../../../../constant/constant.dart';
 
-class ShowTipsInfo extends StatefulWidget {
+class DiagnosticInfo extends StatefulWidget {
   String info;
 
-  ShowTipsInfo({Key? key, required this.info}) : super(key: key);
+  DiagnosticInfo({Key? key, required this.info}) : super(key: key);
 
   @override
-  State<ShowTipsInfo> createState() => _ShowTipsInfoState();
+  State<DiagnosticInfo> createState() => _DiagnosticInfoState();
 }
 
-class _ShowTipsInfoState extends State<ShowTipsInfo> {
+class _DiagnosticInfoState extends State<DiagnosticInfo> {
   @override
   Widget build(BuildContext context) {
     print('${widget.info}kkkkkk');
@@ -29,12 +29,12 @@ class _ShowTipsInfoState extends State<ShowTipsInfo> {
           children: [
             GestureDetector(
               onTap: () {
-                launch('https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjCiZK16Mj2AhVATWwGHaj6B08QPAgI');
+                launch('https://www.google.com/maps/place/Popular+Medical+Center+Ltd/@24.8993411,91.8574334,15z/data=!4m2!3m1!1s0x0:0x495d54cee9ae255f?sa=X&ved=2ahUKEwjmqb7I38z2AhWZxTgGHdLPCtAQ_BJ6BAgqEAU');
               },
               child: Stack(
                 children: [
                   Container(
-                    child: Image.asset('${img5}'),
+                    child: Image.asset('assets/popular.png'),
                   ),
                   Positioned(
                     left: MediaQuery.of(context).size.width * 0.46,
@@ -55,7 +55,7 @@ class _ShowTipsInfoState extends State<ShowTipsInfo> {
             Container(
               margin: EdgeInsets.all(15),
               child: Text(
-                '${tips1}',
+                '${tips23}',
                 style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -67,7 +67,7 @@ class _ShowTipsInfoState extends State<ShowTipsInfo> {
               child: Container(
                 margin: EdgeInsets.all(15),
                 child: Text(
-                  '${tips2}',
+                  '${tips29}',
                   style: TextStyle(fontSize: 22),
                 ),
               ),
@@ -77,7 +77,7 @@ class _ShowTipsInfoState extends State<ShowTipsInfo> {
               child: Container(
                 margin: EdgeInsets.all(15),
                 child: Text(
-                  '${tips3}',
+                  '${tips25}',
                   style: TextStyle(fontSize: 22),
                 ),
               ),
@@ -87,7 +87,7 @@ class _ShowTipsInfoState extends State<ShowTipsInfo> {
               child: Container(
                 margin: EdgeInsets.all(15),
                 child: Text(
-                  '${tips5}',
+                  '${tips24}',
                   style: TextStyle(fontSize: 22),
                 ),
               ),
@@ -97,7 +97,17 @@ class _ShowTipsInfoState extends State<ShowTipsInfo> {
               child: Container(
                 margin: EdgeInsets.all(15),
                 child: Text(
-                  '${tips4}',
+                  '${tips26}',
+                  style: TextStyle(fontSize: 22),
+                ),
+              ),
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Container(
+                margin: EdgeInsets.all(15),
+                child: Text(
+                  '${tips32}',
                   style: TextStyle(fontSize: 22),
                 ),
               ),

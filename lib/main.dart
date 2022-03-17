@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
         home: MyHomePage(),
         routes: {
-          'SecondPage': (ctx) => SecondPage(),
+          'SecondPage': (ctx) => DiagnosticsInfo(),
           'ExtendedPage': (ctx) => ExtendedPage(),
           'ShowWeb': (ctx) => ShowWeb(),
         },

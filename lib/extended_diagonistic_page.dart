@@ -4,6 +4,7 @@ import 'package:diagonistic/widget/diagonistic_info3.dart';
 import 'package:flutter/material.dart';
 
 
+
 class ExtendedPage extends StatefulWidget {
   const ExtendedPage({Key? key}) : super(key: key);
 
@@ -18,13 +19,13 @@ class _ExtendedPageState extends State<ExtendedPage> {
     String tipsNumber = tipsNumberCollector.toString();
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tips number $tipsNumber'),
+        title: Text('Diagnostic Center $tipsNumber'),
       ),
       body: (tipsNumber == '1')
-          ? ShowTipsInfo(info: tipsNumber)
+          ? DiagnosticInfo(info: tipsNumber)
           : (tipsNumber == '2')
-              ? ShowTipsInfo2(info: tipsNumber)
-              : ShowTipsInfo3(info: tipsNumber),
+              ? DiagnisticInfo2(info: tipsNumber)
+              : DiagnosticInfo3(info: tipsNumber),
     );
   }
 }

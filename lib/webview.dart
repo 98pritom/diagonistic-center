@@ -14,7 +14,7 @@ class ShowWeb extends StatelessWidget {
           const Expanded(
             child: WebView(
               initialUrl:
-              'https://www.daktars.com/diagnostic_centers',
+              'https://medlineplus.gov/healthtopics.html',
               javascriptMode: JavascriptMode.unrestricted,
             ),
           ),
